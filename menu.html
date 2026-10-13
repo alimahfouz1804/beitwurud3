@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Menu | Beit Wurud</title>
+  <meta name="description" content="Explore the official Beit Wurud Café Menu featuring specialty Hot &amp; Cold Coffee, Frappes, Smoothies, Iced Tea, freshly baked Desserts, and Savory Sandwiches." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-transition-wrapper">
+
+  <!-- ======================= NAVIGATION BAR ======================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Beit Wurud Home">
+        <img src="assets/images/logo-beit-wurud.jpg" alt="Beit Wurud Original Logo" class="nav-logo-img" width="58" height="58" />
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">BEIT WURUD</span>
+          <span class="nav-brand-sub">Flowers &amp; Café</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="primary-nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="flowers.html" class="nav-link">Flowers &amp; Gifts</a></li>
+          <li><a href="menu.html" class="nav-link active" aria-current="page">Café Menu</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="cart-toggle-btn" data-open-cart aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count-badge" data-cart-count>0</span>
+        </button>
+
+        <a href="#whatsapp" class="btn btn-whatsapp nav-whatsapp-btn" data-general-whatsapp aria-label="Contact Beit Wurud on WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <button type="button" class="menu-toggle-btn" id="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-nav-links" aria-label="Toggle navigation menu">
+          <div class="hamburger-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= PAGE HEADER ======================= -->
+    <section class="page-hero-banner" aria-labelledby="menu-page-heading">
+      <div class="container">
+        <span class="section-eyebrow">Specialty Coffee &amp; Kitchen</span>
+        <h1 class="page-hero-title" id="menu-page-heading">Café Menu</h1>
+        <p class="page-hero-desc">
+          Enjoy handcrafted espresso drinks, signature lattes, refreshing smoothies, artisanal pastries, and savory sandwiches in our flower-filled space.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================= CATEGORY FILTER PILLS ======================= -->
+    <div class="menu-filter-bar" role="navigation" aria-label="Menu Categories">
+      <div class="container">
+        <div class="menu-pills">
+          <button type="button" class="menu-pill active" data-menu-filter="all">All Categories</button>
+          <button type="button" class="menu-pill" data-menu-filter="hot">Hot</button>
+          <button type="button" class="menu-pill" data-menu-filter="cold">Cold</button>
+          <button type="button" class="menu-pill" data-menu-filter="frappe">Frappe</button>
+          <button type="button" class="menu-pill" data-menu-filter="smoothies">Smoothies</button>
+          <button type="button" class="menu-pill" data-menu-filter="iced-tea">Iced Tea</button>
+          <button type="button" class="menu-pill" data-menu-filter="desserts">Desserts</button>
+          <button type="button" class="menu-pill" data-menu-filter="sandwiches">Sandwiches</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================= CAFÉ MENU SECTIONS ======================= -->
+    <section class="section-padding" style="padding-top: 0.5rem;" aria-label="Beit Wurud Menu Items">
+      <div class="container">
+        <div class="menu-layout-grid">
+
+          <!-- 1. HOT -->
+          <article class="menu-category-card reveal-on-scroll" data-menu-category="hot">
+            <header class="menu-category-header">
+              <h2 class="menu-category-title">Hot</h2>
+            </header>
+            <ul class="menu-items-list">
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Espresso</span></div>
+                <span class="menu-item-price">$3.3</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Double Espresso</span></div>
+                <span class="menu-item-price">$4.4</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Cappuccino</span></div>
+                <span class="menu-item-price">$5.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Latte</span></div>
+                <span class="menu-item-price">$5.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Flat White</span></div>
+                <span class="menu-item-price">$4.4</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Cortado</span></div>
+                <span class="menu-item-price">$4.4</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Spanish Latte</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Raff</span></div>
+                <span class="menu-item-price">$6.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Halawa Latte</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Beit Wurud Latte</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Flavored Latte</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">V60</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">French Press</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Americano</span></div>
+                <span class="menu-item-price">$4.0</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- 2. COLD -->
+          <article class="menu-category-card reveal-on-scroll" data-menu-category="cold">
+            <header class="menu-category-header">
+              <h2 class="menu-category-title">Cold</h2>
+            </header>
+            <ul class="menu-items-list">
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Cold Brew</span></div>
+                <span class="menu-item-price">$5.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Matcha</span></div>
+                <span class="menu-item-price">$4.4</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Iced Beit Wurud</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Iced Latte</span></div>
+                <span class="menu-item-price">$5.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Spanish Home Made</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Mazagran</span></div>
+                <span class="menu-item-price">$5.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Flavored Iced Latte</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Banoffee Caramel</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Iced Shaken Mocca</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Crème Brulée</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- 3. FRAPPE -->
+          <article class="menu-category-card reveal-on-scroll" data-menu-category="frappe">
+            <header class="menu-category-header">
+              <h2 class="menu-category-title">Frappe</h2>
+            </header>
+            <ul class="menu-items-list">
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">White Mocca Frappe</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Spanish Frappe</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Banoffee Frappe</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Beit Wurud Frappe</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Salted Caramel Frappe</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Caramel Frappe</span></div>
+                <span class="menu-item-price">$5.5</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- 4. SMOOTHIES & 5. ICED TEA -->
+          <div style="display: flex; flex-direction: column; gap: clamp(1.75rem, 3.5vw, 3rem);">
+            <article class="menu-category-card reveal-on-scroll" data-menu-category="smoothies">
+              <header class="menu-category-header">
+                <h2 class="menu-category-title">Smoothies</h2>
+              </header>
+              <ul class="menu-items-list">
+                <li class="menu-row">
+                  <div class="menu-item-info"><span class="menu-item-name">Mango Smoothie</span></div>
+                  <span class="menu-item-price">$5.5</span>
+                </li>
+                <li class="menu-row">
+                  <div class="menu-item-info"><span class="menu-item-name">Strawberry Smoothie</span></div>
+                  <span class="menu-item-price">$5.5</span>
+                </li>
+                <li class="menu-row">
+                  <div class="menu-item-info"><span class="menu-item-name">Passion Smoothie</span></div>
+                  <span class="menu-item-price">$5.5</span>
+                </li>
+                <li class="menu-row">
+                  <div class="menu-item-info"><span class="menu-item-name">Apple Smoothie</span></div>
+                  <span class="menu-item-price">$5.5</span>
+                </li>
+                <li class="menu-row">
+                  <div class="menu-item-info"><span class="menu-item-name">Peach Smoothie</span></div>
+                  <span class="menu-item-price">$5.5</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="menu-category-card reveal-on-scroll" data-menu-category="iced-tea">
+              <header class="menu-category-header">
+                <h2 class="menu-category-title">Iced Tea</h2>
+              </header>
+              <ul class="menu-items-list">
+                <li class="menu-row">
+                  <div class="menu-item-info"><span class="menu-item-name">Mango Rose Ice Tea</span></div>
+                  <span class="menu-item-price">$4.0</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <!-- ======================= C. COFFEE DESIGN IMAGE FEATURE ======================= -->
+        <div class="coffee-design-feature reveal-on-scroll">
+          <figure class="coffee-design-frame">
+            <img
+              src="assets/images/coffee-design.jpg"
+              alt="Beit Wurud framed coffee artwork showing two hands holding coffee cups with Arabic calligraphy"
+              class="coffee-design-img"
+              width="960"
+              height="1280"
+              loading="lazy"
+            />
+          </figure>
+          <div class="coffee-design-text-box">
+            <span class="section-eyebrow">Shared Moments</span>
+            <h2 class="section-title">Crafted to Be Enjoyed Together</h2>
+            <p>
+              Whether you are catching up with a close friend over two warm cups of coffee or treating yourself to a quiet afternoon surrounded by fresh flowers, Beit Wurud is designed to make every visit feel personal and unhurried.
+            </p>
+            <a href="flowers.html" class="btn btn-outline">
+              <span>Pair Your Coffee with Fresh Flowers</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- ======================= DESSERTS & SANDWICHES ======================= -->
+        <div class="menu-layout-grid">
+          <!-- 6. DESSERTS -->
+          <article class="menu-category-card reveal-on-scroll" data-menu-category="desserts">
+            <header class="menu-category-header">
+              <h2 class="menu-category-title">Desserts</h2>
+            </header>
+            <ul class="menu-items-list">
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Croissant Chocolate</span></div>
+                <span class="menu-item-price">$3.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Croissant Cheese</span></div>
+                <span class="menu-item-price">$3.5</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Cinnamon Rolls</span></div>
+                <span class="menu-item-price">$5.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Profiteroles</span></div>
+                <span class="menu-item-price">$4.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Cheese Cake</span></div>
+                <span class="menu-item-price">$5.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Brownies</span></div>
+                <span class="menu-item-price">$4.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Cookies</span></div>
+                <span class="menu-item-price">$4.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Foundant</span></div>
+                <span class="menu-item-price">$5.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Carrot Cake</span></div>
+                <span class="menu-item-price">$4.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Eclair</span></div>
+                <span class="menu-item-price">$4.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Lemon Cake</span></div>
+                <span class="menu-item-price">$2.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Marble Cake</span></div>
+                <span class="menu-item-price">$2.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info">
+                  <span class="menu-item-name">Mini Cake (Pre Order)</span>
+                  <span class="menu-item-note">Available by pre-order</span>
+                </div>
+                <span class="menu-item-price">$15.0</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- 7. SANDWICHES -->
+          <article class="menu-category-card reveal-on-scroll" data-menu-category="sandwiches">
+            <header class="menu-category-header">
+              <h2 class="menu-category-title">Sandwiches</h2>
+            </header>
+            <ul class="menu-items-list">
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Halloumi Pesto</span></div>
+                <span class="menu-item-price">$5.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Turkey and Cheese</span></div>
+                <span class="menu-item-price">$5.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Chicken Junkless</span></div>
+                <span class="menu-item-price">$6.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Chicken Caesar Salad</span></div>
+                <span class="menu-item-price">$7.0</span>
+              </li>
+              <li class="menu-row">
+                <div class="menu-item-info"><span class="menu-item-name">Smokey Cheese Pasta with Chicken</span></div>
+                <span class="menu-item-price">$8.0</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= SLIDE-OUT SHOPPING CART ======================= -->
+  <div class="cart-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping Cart">
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title">
+        <span>Your Flower Cart</span>
+      </h2>
+      <button type="button" class="cart-close-btn" data-close-cart aria-label="Close cart">&times;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-items-container"></div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-summary-row">
+        <span>Selected Items</span>
+        <strong id="cart-summary-items">0 items</strong>
+      </div>
+      <div class="cart-summary-total">
+        <span>Estimated Total</span>
+        <span id="cart-summary-total">Confirmed via WhatsApp</span>
+      </div>
+      <div class="cart-footer-actions">
+        <button type="button" class="btn btn-whatsapp" id="cart-whatsapp-checkout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          <span>Order via WhatsApp</span>
+        </button>
+        <button type="button" class="btn btn-outline" data-close-cart>
+          <span>Continue Shopping</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-box">
+          <a href="index.html" class="footer-logo-wrap" aria-label="Beit Wurud Home">
+            <img src="assets/images/logo-beit-wurud.jpg" alt="Beit Wurud Original Logo" class="footer-logo-img" width="48" height="48" />
+            <span class="footer-logo-name">BEIT WURUD</span>
+          </a>
+          <p class="footer-desc">
+            A boutique flower shop and specialty café bringing together fresh floral arrangements, custom designs, artisan coffee, and a serene atmosphere.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flowers.html">Flowers &amp; Gifts</a></li>
+            <li><a href="menu.html">Café Menu</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Connect With Us</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#whatsapp" data-general-whatsapp>
+                <span>WhatsApp Inquiries &amp; Orders</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/beit.wurud" target="_blank" rel="noopener noreferrer">
+                <span>Instagram: @beit.wurud</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Beit Wurud. All rights reserved.</p>
+        <p>Handcrafted Flowers &amp; Specialty Café</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Flowers &amp; Gifts | Beit Wurud</title>
+  <meta name="description" content="Explore Beit Wurud's handcrafted flower bouquets, gift arrangements, and custom floral designs. Add bouquets to your cart and order seamlessly via WhatsApp." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-transition-wrapper">
+
+  <!-- ======================= NAVIGATION BAR ======================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Beit Wurud Home">
+        <img src="assets/images/logo-beit-wurud.jpg" alt="Beit Wurud Original Logo" class="nav-logo-img" width="58" height="58" />
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">BEIT WURUD</span>
+          <span class="nav-brand-sub">Flowers &amp; Café</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="primary-nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="flowers.html" class="nav-link active" aria-current="page">Flowers &amp; Gifts</a></li>
+          <li><a href="menu.html" class="nav-link">Café Menu</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="cart-toggle-btn" data-open-cart aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count-badge" data-cart-count>0</span>
+        </button>
+
+        <a href="#whatsapp" class="btn btn-whatsapp nav-whatsapp-btn" data-general-whatsapp aria-label="Contact Beit Wurud on WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <button type="button" class="menu-toggle-btn" id="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-nav-links" aria-label="Toggle navigation menu">
+          <div class="hamburger-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= A. PAGE HEADER ======================= -->
+    <section class="page-hero-banner" aria-labelledby="flowers-page-heading">
+      <div class="container">
+        <span class="section-eyebrow">Botanical Boutique</span>
+        <h1 class="page-hero-title" id="flowers-page-heading">Our Flowers &amp; Gifts</h1>
+        <p class="approved-phrase page-hero-phrase">"Every Flower Tells a Story."</p>
+        <p class="page-hero-desc">
+          Select from our signature bouquets below to add to your cart and order via WhatsApp, or request a personalized floral arrangement crafted for your occasion.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======================= B & C. FLOWER BOUQUETS & FLOWER BOXES ======================= -->
+    <section class="section-padding" aria-label="Flower Collections">
+      <div class="container">
+        <!-- Category Filter Tabs -->
+        <div class="category-tabs" role="tablist" aria-label="Filter flower categories">
+          <button type="button" class="category-tab-btn active" data-flower-filter="all">All Collections</button>
+          <button type="button" class="category-tab-btn" data-flower-filter="bouquets">Flower Bouquets</button>
+          <button type="button" class="category-tab-btn" data-flower-filter="boxes">Flower Boxes</button>
+        </div>
+
+        <!-- Category 1: Flower Bouquets (Populated from js/products.js using the 2 real product photos) -->
+        <div class="category-block reveal-on-scroll" data-flower-section="bouquets">
+          <div class="category-block-header">
+            <h2 class="category-block-title">Flower Bouquets</h2>
+            <span class="category-block-count">2 Handcrafted Arrangements</span>
+          </div>
+
+          <div class="products-grid" id="bouquets-product-grid">
+            <article class="product-card" data-product-id="bw-bouquet-1">
+              <div class="product-img-container">
+                <img src="assets/images/flower-1.jpeg" alt="Handcrafted bouquet of deep red roses and delicate white baby's breath wrapped in cream and gold-trimmed paper with a burgundy satin bow" class="product-img" loading="lazy" />
+                <span class="placeholder-badge" title="Temporary editable product name in js/products.js">Editable Placeholder Name</span>
+              </div>
+              <div class="product-card-content">
+                <span class="product-category-label">Flower Bouquets</span>
+                <h3 class="product-title">Signature Red Rose &amp; Gypsophila Bouquet</h3>
+                <p class="product-desc">Deep crimson roses paired with delicate white gypsophila, wrapped in cream and gold-bordered paper and finished with a rich burgundy satin ribbon and lace bow.</p>
+                <div class="product-price-row">
+                  <span class="product-price-label">Price</span>
+                  <span class="product-price-value">Price on Request</span>
+                </div>
+                <div class="product-controls">
+                  <div class="qty-selector" aria-label="Select quantity for Signature Red Rose &amp; Gypsophila Bouquet">
+                    <button type="button" class="qty-btn" data-qty-change="-1" aria-label="Decrease quantity">−</button>
+                    <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Quantity" />
+                    <button type="button" class="qty-btn" data-qty-change="1" aria-label="Increase quantity">+</button>
+                  </div>
+                  <button type="button" class="btn btn-primary add-to-cart-btn" data-add-id="bw-bouquet-1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product-id="bw-bouquet-2">
+              <div class="product-img-container">
+                <img src="assets/images/flower-2.jpeg" alt="Lush bouquet of soft white roses, sky-blue hydrangeas, baby's breath, and fresh eucalyptus leaves wrapped in layered blue paper" class="product-img" loading="lazy" />
+                <span class="placeholder-badge" title="Temporary editable product name in js/products.js">Editable Placeholder Name</span>
+              </div>
+              <div class="product-card-content">
+                <span class="product-category-label">Flower Bouquets</span>
+                <h3 class="product-title">Serene Blue Hydrangea &amp; White Rose Bouquet</h3>
+                <p class="product-desc">Creamy white roses and sky-blue hydrangeas accented with fresh eucalyptus foliage and baby's breath, wrapped in layered sky-blue artisan paper.</p>
+                <div class="product-price-row">
+                  <span class="product-price-label">Price</span>
+                  <span class="product-price-value">Price on Request</span>
+                </div>
+                <div class="product-controls">
+                  <div class="qty-selector" aria-label="Select quantity for Serene Blue Hydrangea &amp; White Rose Bouquet">
+                    <button type="button" class="qty-btn" data-qty-change="-1" aria-label="Decrease quantity">−</button>
+                    <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="Quantity" />
+                    <button type="button" class="qty-btn" data-qty-change="1" aria-label="Increase quantity">+</button>
+                  </div>
+                  <button type="button" class="btn btn-primary add-to-cart-btn" data-add-id="bw-bouquet-2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Category 2: Flower Boxes (Ready for future additions without inventing products) -->
+        <div class="category-block reveal-on-scroll" data-flower-section="boxes">
+          <div class="category-block-header">
+            <h2 class="category-block-title">Flower Boxes</h2>
+            <span class="category-block-count">Bespoke Box Arrangements</span>
+          </div>
+
+          <div class="future-category-card">
+            <h3 class="future-category-title">Signature Hatbox &amp; Gift Arrangements</h3>
+            <p class="future-category-text">
+              Our curated flower box collection is prepared fresh to order using seasonal blooms and luxury keepsake boxes seen in our boutique. Contact us on WhatsApp to customize your flower box size, color palette, and floral selection.
+            </p>
+            <a href="#custom-design" class="btn btn-outline" data-custom-design-whatsapp>
+              <span>Inquire About a Flower Box</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= D & E. FLOWER DESIGN IMAGE & CUSTOM DESIGN SECTION ======================= -->
+    <section class="section-padding custom-design-section" id="custom-design" aria-labelledby="custom-design-heading">
+      <div class="container">
+        <div class="custom-design-grid">
+          <div class="reveal-on-scroll">
+            <figure class="flower-design-showcase">
+              <img
+                src="assets/images/flower-design.jpg"
+                alt="Beit Wurud floral display featuring fresh roses, sunflowers, lilies, and baby's breath in terracotta pots beneath a crystal chandelier"
+                class="flower-design-img"
+                width="960"
+                height="1280"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+
+          <div class="custom-design-content reveal-on-scroll">
+            <span class="section-eyebrow">Bespoke Floral Styling</span>
+            <h2 class="section-title" id="custom-design-heading">Custom Flower Arrangements</h2>
+            <p class="approved-phrase">"Made with Love, Wrapped in Flowers"</p>
+            <p class="custom-design-text">
+              Looking for a specific color palette, a romantic rose arrangement, a luxury flower box, or event florals? Our florists hand-select fresh stems from our daily botanical stand to bring your vision to life.
+            </p>
+
+            <ul class="custom-features-list">
+              <li>Personalized bouquets wrapped in premium papers and ribbons</li>
+              <li>Custom hatboxes and gift arrangements tailored to your occasion</li>
+              <li>Fresh daily roses, hydrangeas, lilies, sunflowers, and seasonal stems</li>
+            </ul>
+
+            <a
+              href="#whatsapp-custom"
+              class="btn btn-whatsapp"
+              data-custom-design-whatsapp
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <span>Request a Custom Design</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= SLIDE-OUT SHOPPING CART ======================= -->
+  <div class="cart-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping Cart">
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title">
+        <span>Your Flower Cart</span>
+      </h2>
+      <button type="button" class="cart-close-btn" data-close-cart aria-label="Close cart">&times;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-items-container"></div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-summary-row">
+        <span>Selected Items</span>
+        <strong id="cart-summary-items">0 items</strong>
+      </div>
+      <div class="cart-summary-total">
+        <span>Estimated Total</span>
+        <span id="cart-summary-total">Confirmed via WhatsApp</span>
+      </div>
+      <div class="cart-footer-actions">
+        <button type="button" class="btn btn-whatsapp" id="cart-whatsapp-checkout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          <span>Order via WhatsApp</span>
+        </button>
+        <button type="button" class="btn btn-outline" data-close-cart>
+          <span>Continue Shopping</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-box">
+          <a href="index.html" class="footer-logo-wrap" aria-label="Beit Wurud Home">
+            <img src="assets/images/logo-beit-wurud.jpg" alt="Beit Wurud Original Logo" class="footer-logo-img" width="48" height="48" />
+            <span class="footer-logo-name">BEIT WURUD</span>
+          </a>
+          <p class="footer-desc">
+            A boutique flower shop and specialty café bringing together fresh floral arrangements, custom designs, artisan coffee, and a serene atmosphere.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flowers.html">Flowers &amp; Gifts</a></li>
+            <li><a href="menu.html">Café Menu</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Connect With Us</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#whatsapp" data-general-whatsapp>
+                <span>WhatsApp Inquiries &amp; Orders</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/beit.wurud" target="_blank" rel="noopener noreferrer">
+                <span>Instagram: @beit.wurud</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Beit Wurud. All rights reserved.</p>
+        <p>Handcrafted Flowers &amp; Specialty Café</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beit Wurud | Flower Boutique &amp; Specialty Café</title>
+  <meta name="description" content="Beit Wurud combines fresh handcrafted flower bouquets, custom floral arrangements, specialty coffee, beverages, desserts, and a warm welcoming café atmosphere." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-transition-wrapper">
+
+  <!-- ======================= NAVIGATION BAR ======================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand entrance-logo" aria-label="Beit Wurud Home">
+        <img src="assets/images/logo-beit-wurud.jpg" alt="Beit Wurud Original Logo" class="nav-logo-img" width="58" height="58" />
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">BEIT WURUD</span>
+          <span class="nav-brand-sub">Flowers &amp; Café</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="primary-nav-links">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="flowers.html" class="nav-link">Flowers &amp; Gifts</a></li>
+          <li><a href="menu.html" class="nav-link">Café Menu</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="cart-toggle-btn" data-open-cart aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count-badge" data-cart-count>0</span>
+        </button>
+
+        <a href="#whatsapp" class="btn btn-whatsapp nav-whatsapp-btn" data-general-whatsapp aria-label="Contact Beit Wurud on WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <button type="button" class="menu-toggle-btn" id="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-nav-links" aria-label="Toggle navigation menu">
+          <div class="hamburger-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= A. HERO SECTION ======================= -->
+    <section class="hero-section" aria-label="Welcome to Beit Wurud">
+      <div class="hero-ambient-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge entrance-logo">
+            <span>Floral Boutique &amp; Specialty Coffee House</span>
+          </div>
+
+          <h1 class="hero-title entrance-heading">BEIT WURUD</h1>
+
+          <p class="hero-tagline entrance-tagline">"Where Coffee Meets Flowers"</p>
+
+          <p class="hero-description entrance-tagline">
+            Step into a serene sanctuary of fresh botanical arrangements, handcrafted bouquets, artisan coffee, and warm hospitality designed for moments of beauty and relaxation.
+          </p>
+
+          <div class="hero-buttons entrance-buttons">
+            <a href="flowers.html" class="btn btn-primary">
+              <span>Explore Flowers</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="menu.html" class="btn btn-secondary">
+              <span>Explore Our Menu</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrap entrance-hero-photo">
+          <figure class="hero-photo-frame">
+            <img
+              src="assets/images/outdoor-design.jpeg"
+              alt="Beit Wurud sage-green storefront with illuminated gold Arabic signage and an outdoor wooden bistro table adorned with a fresh rose bouquet"
+              class="hero-exterior-img"
+              width="718"
+              height="1280"
+            />
+            <figcaption class="hero-photo-caption">
+              <div>Our Boutique &amp; Café Facade</div>
+              <span>Beit Wurud</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= B. FLOWER COLLECTION PREVIEW ======================= -->
+    <section class="section-padding flower-preview-section" aria-labelledby="flower-preview-heading">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Botanical Artistry</span>
+          <h2 class="section-title" id="flower-preview-heading">Handcrafted Floral Arrangements</h2>
+          <p class="section-subtitle">
+            From romantic crimson rose bouquets to serene hydrangea arrangements and bespoke floral styling, each creation is thoughtfully composed using fresh blooms.
+          </p>
+        </div>
+
+        <div class="flower-preview-grid">
+          <article class="preview-card reveal-on-scroll">
+            <div class="preview-img-wrap">
+              <img
+                src="assets/images/flower-1.jpeg"
+                alt="Bouquet of deep red roses and white baby's breath wrapped in cream and gold paper with burgundy ribbon"
+                class="preview-img"
+                width="1254"
+                height="1254"
+                loading="lazy"
+              />
+            </div>
+            <div class="preview-card-body">
+              <span class="preview-tag">Signature Bouquet</span>
+              <h3 class="preview-title">Crimson Roses &amp; Gypsophila</h3>
+              <p class="preview-text">
+                Velvety red roses paired with delicate baby's breath, wrapped in cream and gold-bordered paper with a satin and lace bow.
+              </p>
+            </div>
+          </article>
+
+          <article class="preview-card reveal-on-scroll">
+            <div class="preview-img-wrap">
+              <img
+                src="assets/images/flower-2.jpeg"
+                alt="Bouquet of white roses, sky-blue hydrangeas, baby's breath, and eucalyptus leaves in blue wrapping"
+                class="preview-img"
+                width="1254"
+                height="1254"
+                loading="lazy"
+              />
+            </div>
+            <div class="preview-card-body">
+              <span class="preview-tag">Signature Bouquet</span>
+              <h3 class="preview-title">Sky Hydrangea &amp; White Roses</h3>
+              <p class="preview-text">
+                Soft cream roses, lush blue hydrangeas, and fresh eucalyptus foliage arranged in layered sky-blue artisan wrapping.
+              </p>
+            </div>
+          </article>
+
+          <article class="preview-card reveal-on-scroll">
+            <div class="preview-img-wrap light-bg">
+              <img
+                src="assets/images/flower-design.jpg"
+                alt="Beit Wurud tiered wooden flower display filled with terracotta pots of fresh roses, sunflowers, and lilies beneath a crystal chandelier"
+                class="preview-img"
+                width="960"
+                height="1280"
+                loading="lazy"
+              />
+            </div>
+            <div class="preview-card-body">
+              <span class="preview-tag">In-Store Florals</span>
+              <h3 class="preview-title">Fresh Daily Blooms &amp; Custom Designs</h3>
+              <p class="preview-text">
+                Select your favorite stems directly from our tiered terracotta flower stand or request a custom arrangement tailored to your occasion.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-cta reveal-on-scroll">
+          <a href="flowers.html" class="btn btn-primary">
+            <span>Discover Our Flowers</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= C. OUR SPACE – INTERIOR GALLERY ======================= -->
+    <section class="section-padding interior-gallery-section" aria-labelledby="interior-gallery-heading">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Our Space</span>
+          <h2 class="section-title" id="interior-gallery-heading">Inside Beit Wurud</h2>
+          <p class="section-subtitle">
+            Warm illuminated archways, crystal chandeliers, lush vertical greenery, and intimate wooden tables surrounded by fresh blooms. Click any photograph to view in full detail.
+          </p>
+        </div>
+
+        <div class="interior-gallery-grid">
+          <figure
+            class="gallery-item reveal-on-scroll"
+            tabindex="0"
+            role="button"
+            aria-label="View larger image: Illuminated archway and botanical alcove"
+            data-lightbox-src="assets/images/design2.jpeg"
+            data-lightbox-caption="Illuminated Archway &amp; Botanical Alcove with Patterned Tiles"
+          >
+            <img
+              src="assets/images/design2.jpeg"
+              alt="Beit Wurud interior archway with warm LED lighting, hanging greenery wall, framed art, and a floral centerpiece on a round bistro table"
+              class="gallery-img"
+              width="730"
+              height="1280"
+              loading="lazy"
+            />
+            <figcaption class="gallery-caption-overlay">
+              <div class="gallery-caption-title">The Botanical Alcove</div>
+              <div class="gallery-caption-sub">
+                <span>Arched sanctuary &amp; floral table</span>
+                <span class="gallery-zoom-icon" aria-hidden="true">+</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item reveal-on-scroll"
+            tabindex="0"
+            role="button"
+            aria-label="View larger image: Main salon and crystal chandelier"
+            data-lightbox-src="assets/images/design5.jpeg"
+            data-lightbox-caption="Main Salon, Crystal Chandelier &amp; Terracotta Flower Stand"
+          >
+            <img
+              src="assets/images/design5.jpeg"
+              alt="Wide view of Beit Wurud interior showcasing the grand crystal chandelier, arched seating areas, mezzanine balcony, and fresh flowers"
+              class="gallery-img"
+              width="727"
+              height="1280"
+              loading="lazy"
+            />
+            <figcaption class="gallery-caption-overlay">
+              <div class="gallery-caption-title">The Grand Salon</div>
+              <div class="gallery-caption-sub">
+                <span>Chandelier &amp; flower display</span>
+                <span class="gallery-zoom-icon" aria-hidden="true">+</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item reveal-on-scroll"
+            tabindex="0"
+            role="button"
+            aria-label="View larger image: Espresso bar and gift box shelves"
+            data-lightbox-src="assets/images/design4.jpeg"
+            data-lightbox-caption="Specialty Espresso Bar, Dessert Display &amp; Flower Box Shelving"
+          >
+            <img
+              src="assets/images/design4.jpeg"
+              alt="Beit Wurud sage-green fluted coffee counter with espresso machine, pastry display case, mezzanine balcony, and shelves of flower boxes"
+              class="gallery-img"
+              width="671"
+              height="1178"
+              loading="lazy"
+            />
+            <figcaption class="gallery-caption-overlay">
+              <div class="gallery-caption-title">The Espresso &amp; Pastry Bar</div>
+              <div class="gallery-caption-sub">
+                <span>Specialty coffee &amp; gift boxes</span>
+                <span class="gallery-zoom-icon" aria-hidden="true">+</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure
+            class="gallery-item reveal-on-scroll"
+            tabindex="0"
+            role="button"
+            aria-label="View larger image: Cozy café seating with fresh sunflower bouquet"
+            data-lightbox-src="assets/images/design3.jpeg"
+            data-lightbox-caption="Cozy Café Tables Adorned with Fresh Sunflower &amp; Rose Bouquets"
+          >
+            <img
+              src="assets/images/design3.jpeg"
+              alt="Intimate wooden café table at Beit Wurud topped with a sunflower and purple rose bouquet looking toward the sage coffee bar"
+              class="gallery-img"
+              width="563"
+              height="1022"
+              loading="lazy"
+            />
+            <figcaption class="gallery-caption-overlay">
+              <div class="gallery-caption-title">Intimate Café Seating</div>
+              <div class="gallery-caption-sub">
+                <span>Warm wood &amp; fresh blooms</span>
+                <span class="gallery-zoom-icon" aria-hidden="true">+</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= D. COFFEE & FLOWERS SECTION ======================= -->
+    <section class="section-padding coffee-flowers-section" aria-labelledby="coffee-flowers-heading">
+      <div class="container">
+        <div class="coffee-flowers-card reveal-on-scroll">
+          <div class="coffee-flowers-content">
+            <span class="section-eyebrow">The Café Experience</span>
+            <h2 class="section-title" id="coffee-flowers-heading">Specialty Coffee, Artisanal Desserts &amp; Savory Bites</h2>
+            <p class="coffee-flowers-text">
+              Beit Wurud is more than a flower boutique—it is a warm, welcoming haven where the aroma of freshly roasted espresso blends with the fragrance of fresh roses. Whether you are stopping by for a morning Cappuccino, our signature Beit Wurud Latte, a refreshing smoothie, or an afternoon dessert and sandwich, every detail is crafted for comfort.
+            </p>
+
+            <div class="experience-highlights">
+              <div class="highlight-item">
+                <h3 class="highlight-title">Signature Beverages</h3>
+                <p class="highlight-desc">Hot &amp; iced specialty coffees, Beit Wurud Latte, Halawa Latte, Matcha, Frappes, Smoothies &amp; Mango Rose Ice Tea.</p>
+              </div>
+              <div class="highlight-item">
+                <h3 class="highlight-title">Desserts &amp; Sandwiches</h3>
+                <p class="highlight-desc">Fresh croissants, cinnamon rolls, cheesecake, fondant, Halloumi Pesto, Caesar salad &amp; Smokey Cheese Pasta.</p>
+              </div>
+            </div>
+
+            <a href="menu.html" class="btn btn-primary">
+              <span>Explore Our Café Menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+
+          <div class="coffee-flowers-visual">
+            <div class="cf-img-box">
+              <img
+                src="assets/images/coffee-design.jpg"
+                alt="Framed coffee artwork at Beit Wurud illustrating two hands holding coffee cups"
+                width="960"
+                height="1280"
+                loading="lazy"
+              />
+            </div>
+            <div class="cf-img-box">
+              <img
+                src="assets/images/design4.jpeg"
+                alt="Beit Wurud specialty coffee counter and dessert display"
+                width="671"
+                height="1178"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= LIGHTBOX MODAL ======================= -->
+  <div class="lightbox-modal" id="gallery-lightbox" aria-hidden="true" role="dialog" aria-label="Interior photo viewer">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">&times;</button>
+    <button type="button" class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#8249;</button>
+    <div class="lightbox-content">
+      <img src="assets/images/design2.jpeg" alt="" class="lightbox-img" id="lightbox-image" />
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+    <button type="button" class="lightbox-next" id="lightbox-next" aria-label="Next image">&#8250;</button>
+  </div>
+
+  <!-- ======================= SLIDE-OUT SHOPPING CART ======================= -->
+  <div class="cart-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping Cart">
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title">
+        <span>Your Flower Cart</span>
+      </h2>
+      <button type="button" class="cart-close-btn" data-close-cart aria-label="Close cart">&times;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-items-container"></div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-summary-row">
+        <span>Selected Items</span>
+        <strong id="cart-summary-items">0 items</strong>
+      </div>
+      <div class="cart-summary-total">
+        <span>Estimated Total</span>
+        <span id="cart-summary-total">Confirmed via WhatsApp</span>
+      </div>
+      <div class="cart-footer-actions">
+        <button type="button" class="btn btn-whatsapp" id="cart-whatsapp-checkout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          <span>Order via WhatsApp</span>
+        </button>
+        <button type="button" class="btn btn-outline" data-close-cart>
+          <span>Continue Shopping</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-box">
+          <a href="index.html" class="footer-logo-wrap" aria-label="Beit Wurud Home">
+            <img src="assets/images/logo-beit-wurud.jpg" alt="Beit Wurud Original Logo" class="footer-logo-img" width="48" height="48" />
+            <span class="footer-logo-name">BEIT WURUD</span>
+          </a>
+          <p class="footer-desc">
+            A boutique flower shop and specialty café bringing together fresh floral arrangements, custom designs, artisan coffee, and a serene atmosphere.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flowers.html">Flowers &amp; Gifts</a></li>
+            <li><a href="menu.html">Café Menu</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Connect With Us</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#whatsapp" data-general-whatsapp>
+                <span>WhatsApp Inquiries &amp; Orders</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/beit.wurud" target="_blank" rel="noopener noreferrer">
+                <span>Instagram: @beit.wurud</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Beit Wurud. All rights reserved.</p>
+        <p>Handcrafted Flowers &amp; Specialty Café</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
